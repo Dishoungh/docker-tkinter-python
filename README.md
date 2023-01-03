@@ -27,4 +27,4 @@ Created DockerFile. See Dockerfile contents.
 
 1. xhost +local:docker
 2. docker build -t sample-python-app .
-3. docker container run -it --env="DISPLAY" --net=host sample-python-app
+3. sudo docker run -it --rm --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" sample-python-app
