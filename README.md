@@ -11,7 +11,7 @@ Install Docker Engine and Desktop
 9. su - ${USER}
 10. groups
 11. sudo apt-get install ca-certificates curl gnupg lsb-release
-12., sudo mkdir -p /etc/apt/keyrings
+12. sudo mkdir -p /etc/apt/keyrings
 13. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 14. echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 15. sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
